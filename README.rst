@@ -162,7 +162,7 @@ Here are the input and template files.
 
 *outtempl.json*:
 
-.. code:: json
+.. code:: bash
 
     {% macro checkusage(usage) -%}
         {% if usage > 80 -%}true{% else %}false{% endif %}
