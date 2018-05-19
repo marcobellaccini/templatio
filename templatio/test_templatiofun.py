@@ -114,7 +114,7 @@ class TestTemplate(unittest.TestCase):
             exm = str(tmpex)
         
         self.assertRaisesRegex(ValueError,
-                               ("Error: invalid input template\n" + exm ),
+                               ("Error: invalid input template.\n" + exm ),
                                templatio.parseInToOut, intempl,
                                outtempl, inData)
         
@@ -142,7 +142,7 @@ class TestTemplate(unittest.TestCase):
             exm = str(tmpex)
         
         self.assertRaisesRegex(ValueError,
-                               ("Error: invalid output template\n" + exm ),
+                               ("Error: invalid output template.\n" + exm ),
                                templatio.parseInToOut, intempl,
                                outtempl, inData)
         
